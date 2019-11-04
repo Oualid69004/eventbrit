@@ -10,11 +10,11 @@ User.destroy_all
 
 10.times do
 
-  fname=Faker::Name.first_name
+
 
   lname=Faker::Name.last_name
 
-  User.create(email:fname+"."+lname+"@yopmail.com")
+  User.create(email:lname+"@yopmail.com")
 
 end
 
